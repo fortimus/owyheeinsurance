@@ -218,7 +218,6 @@
             color: var(--primary-green);
             font-size: 1.2rem;
             text-align: center;
-            background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400"><defs><linearGradient id="mountainGrad" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="%23f2e6d3"/><stop offset="100%" stop-color="%23d4b896"/></linearGradient></defs><rect fill="url(%23mountainGrad)" width="400" height="400"/><path fill="%232d4a2b" d="M0 280l60-80 40 20 80-120 60 40 80-60 80 80V400H0V280z"/><path fill="%233a5f38" d="M100 300l80-100 60 30 80-80 80 50V400H100V300z"/><path fill="%238b6f47" opacity="0.7" d="M200 320l60-60 40 20 60-40 40 30V400H200V320z"/></svg>');
             background-size: cover;
         }
 
@@ -334,3 +333,4 @@
             }
 
         }
+
