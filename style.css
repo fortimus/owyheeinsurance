@@ -209,7 +209,7 @@
         }
 
         .about-image {
-            
+            max-width: 75%;
             height: 400px;
             border-radius: 15px;
             display: flex;
