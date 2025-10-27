@@ -56,8 +56,8 @@
             color: var(--tan);
         }
 
-        .logo-svg {
-            height: 50px;
+        .logo-img {
+            height: 100px;
             width: auto;
         }
 
@@ -332,4 +332,5 @@
             .services-grid {
                 grid-template-columns: 1fr;
             }
+
         }
