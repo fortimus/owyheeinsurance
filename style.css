@@ -30,7 +30,7 @@
 
         /* Header */
         header {
-            background: var(--primary-green);
+            background: --primary-green;
             color: var(--white);
             padding: 1rem 0;
             position: fixed;
@@ -333,4 +333,5 @@
             }
 
         }
+
 
