@@ -30,7 +30,7 @@
 
         /* Header */
         header {
-            background: --primary-green;
+            background: var(--primary-green);
             color: var(--white);
             padding: 1rem 0;
             position: fixed;
@@ -209,7 +209,7 @@
         }
 
         .about-image {
-            background: var(--tan);
+            
             height: 400px;
             border-radius: 15px;
             display: flex;
