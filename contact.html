@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact Us | Owyhee Insurance Partners</title>
+<meta name="description" content="Reach out to Owyhee Insurance Partners for a free consultation. Serving Owyhee and Canyon counties, Idaho.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<header class="site-header" id="header">
+  <div class="wrap">
+    <div class="nav-group left">
+      <nav><a href="index.html">Home</a></nav>
+      <nav><a href="services.html">Services</a></nav>
+    </div>
+
+    <a href="index.html" class="logo">
+      <div class="logo-badge"><img class="logo-img" src="assets/images/logo.svg" alt="Owyhee Insurance Partners logo"></div>
+    </a>
+
+    <div class="nav-group right">
+      <nav><a href="about.html">About</a></nav>
+      <nav><a href="contact.html" class="active">Contact Us</a></nav>
+    </div>
+
+    <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+  <section class="section wrap">
+    <div class="contact-section">
+      <div class="contact-banner">
+          <img class="contact-img" src="assets/images/contact-banner.jpg" alt="Mountain ridge at sunset with hiker silhouette">
+          <div class="contact-text">
+            <h2><strong>Contact</strong> Us</h2>
+            <p>Schedule a complimentary coverage review!</p>
+          </div>
+      </div>
+      <div class="contact-calendar">
+        <!-- Calendly inline widget begin -->
+        <div class="calendly-inline-widget" data-url="https://calendly.com/owyheeip-info/30min?hide_event_type_details=1text_color=000000&primary_color=3f4f3e" style="min-width:320px;height:340px;"></div>
+        <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+        <!-- Calendly inline widget end -->
+      </div>
+    </div>
+  
+    <div class="contact-cards">
+      <div class="contact-card"><p>15872 Sandy Ridge Ct</p><p>Wilder, ID</p></div>
+      <div class="contact-card"><p>Tel: (208) 974-0157</p><p>Email: info@owyheeip.com</p><p>Social: @owyheeip</p></div>
+      <div class="contact-card"><p>Hours: Mon–Fri 8 AM–5 PM</p></div>
+    </div>
+
+    <form class="contact-form">
+      <div>
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div>
+        <label for="phone">Phone</label>
+        <input type="tel" id="phone" name="phone">
+      </div>
+      <div>
+        <label for="message">Message</label>
+        <textarea id="message" name="message" required></textarea>
+      </div>
+      <button type="submit" class="btn">Send Message</button>
+      <p class="form-status" role="status"></p>
+    </form>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">&copy; <span id="year"></span> Owyhee Insurance Partners. All rights reserved.</div>
+</footer>
+
+<script src="assets/main.js"></script>
+</body>
+</html>

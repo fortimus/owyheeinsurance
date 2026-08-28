@@ -1,168 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Owyhee Insurance Partners</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Home | Owyhee Insurance Partners</title>
+<meta name="description" content="Your neighbors, your local insurance partners. Serving Owyhee and Canyon counties, Idaho.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
-    <header>
-        <nav class="container"> 
-            <div class="logo">
-                <img class="logo-img" src="img/logo.png">
-                <span>Owyhee Insurance Partners</span>
-            </div>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <section id="home" class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <h1>Let us make insurance work for you</h1>
-                <p>Personal insurance solutions for farming communities, ranchers, and rural families across southwestern Idaho</p>
-                <!-- <a href="#contact" class="cta-button">Get Your Quote Today</a> -->
-            </div>
-        </div>
-    </section>
+<header class="site-header" id="header">
+  <div class="wrap">
+    <div class="nav-group left">
+      <nav><a href="index.html" class="active">Home</a></nav>
+      <nav><a href="services.html">Services</a></nav>
+    </div>
 
-    <section id="services" class="services">
-        <div class="container">
-            <h2 class="section-title">Our Insurance Services</h2>
-            <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-icon">🏠</div>
-                    <h3>Individual and Family Health Insurance</h3>
-                    <p>Comprehensive health coverage tailored for individuals and families in rural Idaho. Access to quality care with networks that include specialists in nearby cities.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">🚗</div>
-                    <h3>Small Business Health Benefits</h3>
-                    <p>Affordable group health plans for small businesses and local employers. Competitive rates and flexible options to help you attract and retain quality employees.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">🚜</div>
-                    <h3>Medicare Advantage / Supplement</h3>
-                    <p>Expert guidance through Medicare options including Advantage plans and Supplement policies. We help seniors find the right coverage for their healthcare needs and budget.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">💼</div>
-                    <h3>Dental & Vision</h3>
-                    <p>Comprehensive dental and vision insurance plans for individuals, families, and businesses. Preventive care coverage and access to quality providers throughout the region.</p>
-                </div>
-                <!--<div class="service-card">
-                    <div class="service-icon">🏥</div>
-                    <h3>Health Insurance</h3>
-                    <p>Individual and family health plans designed for rural communities, including coverage for specialists in distant cities.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">💰</div>
-                    <h3>Life Insurance</h3>
-                    <p>Term and permanent life insurance to secure your family's financial future, with options for all budgets and life stages.</p>
-                </div>-->
-            </div>
-        </div>
-    </section>
+    <a href="index.html" class="logo">
+      <div class="logo-badge"><img class="logo-img" src="assets/images/logo.svg" alt="Owyhee Insurance Partners logo"></div>
+    </a>
 
-    <section id="about" class="about">
-        <div class="container">
-            <div class="about-content">
-                <div class="about-text">
-                    <h2>Your Local Insurance Partners</h2>
-                    <p>Meet Michael and Jhing - your neighbors and licensed insurance parnters proudly serving Owyhee and Canyon counties.</p>
-                    <p>Michael brings extensive experience from working with both national carriers and local providers. Jhing spent years helping Medicare members navigate their benefits at one of the nation's largest insurance companies. Together, they leverage over 30 years of combined experience to make insurance simple for Idaho families and small businesses.</p>
-                    <p>Whether you need individual coverage, small business benefits, or Medicare guidance, they deliver integrity, expertise , and authentic Idaho values in service to their community.</p>
-                </div>
-                <div class="about-image">
-                    <div>
-                        <img src="img/0318.jpg">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    <div class="nav-group right">
+      <nav><a href="about.html">About</a></nav>
+      <nav><a href="contact.html">Contact Us</a></nav>
+    </div>
 
-    <section id="contact" class="contact">
-        <div class="container">
-            <div class="contact-content">
-                <div>
-                    <h2>Get In Touch</h2>
-                    <div class="contact-info">
-                        <p>📞 <strong>(208) 974-0157</strong></p>
-                        <p>📧 <strong>info@owyheeip.com</strong></p>
-                        <p>📍 <strong>15872 Sandy Ridge Ct.<br>Wilder, ID 83676</strong></p>
-                        <!--<p>🕒 <strong>Monday - Friday: 8:00 AM - 5:00 PM<br>Saturday: By Appointment</strong></p>-->
-                    </div>
-                    <!--<p style="margin-top: 2rem; font-style: italic;">
-                        "We're always available for emergencies and claims – that's our commitment to our neighbors."
-                    </p>-->
-                </div>
-                <!--<div class="contact-form">
-                    <h3 style="margin-bottom: 1.5rem; color: var(--tan);">Request a Quote</h3>
-                    <form>
-                        <div class="form-group">
-                            <label for="name">Full Name</label>
-                            <input type="text" id="name" name="name" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="phone">Phone</label>
-                            <input type="tel" id="phone" name="phone">
-                        </div>
-                        <div class="form-group">
-                            <label for="insurance-type">Insurance Type</label>
-                            <input type="text" id="insurance-type" name="insurance-type" placeholder="Home, Auto, Farm, etc.">
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Message</label>
-                            <textarea id="message" name="message" rows="4" placeholder="Tell us about your insurance needs..."></textarea>
-                        </div>
-                        <button type="submit" class="submit-btn">Send Message</button>
-                    </form>
-                </div>-->
-            </div>
-        </div>
-    </section>
+    <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 Owyhee Insurance Partners. Licensed in Idaho. All rights reserved.</p>
-        </div>
-    </footer>
+<main>
+  <section class="hero wrap">
+    <h1>Your neighbors.<br>Your local insurance partners.</h1>
+    <div class="hero-image">
+      <img src="assets/images/hero-mountains.jpg" alt="Mountain range at sunrise reflected in a lake">
+      <a href="contact.html" class="btn btn-light">Contact Us</a>
+    </div>
+  </section>
 
-    <script>
-        // Smooth scrolling for navigation links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }
-            });
-        });
+  <section class="section wrap">
+    <div class="section-heading">
+      <h2><strong>Why</strong> choose us</h2>
+      <p>When it comes to your health and financial security, you deserve neighbors who care and experts who deliver.</p>
+    </div>
+    <div class="why-grid">
+      <div class="why-list">
+        <div class="why-item"><strong>Local Experts You Can Trust</strong> — 4th generation Idahoan and veteran-owned with deep community roots.</div>
+        <div class="why-item"><strong>Specialized Knowledge</strong> — Medicare expertise combined with 30+ years of insurance experience.</div>
+        <div class="why-item"><strong>Your Neighbors, Not a Call Center</strong> — Personal service from people who live and work in your community.</div>
+        <div class="why-item"><strong>Complete Coverage Solutions</strong> — Health, Medicare, dental, vision, and small business benefits all under one roof.</div>
+      </div>
+      <img src="assets/images/why-choose-us.jpg" alt="Family silhouetted in a field at sunset">
+    </div>
+  </section>
 
-        // Add scroll effect to header
-        window.addEventListener('scroll', function() {
-            const header = document.querySelector('header');
-            if (window.scrollY > 100) {
-                header.style.background = 'rgba(45, 74, 43, 0.95)';
-            } else {
-                header.style.background = 'var(--primary-green)';
-            }
-        });
-    </script>
+  <section class="section wrap">
+    <p class="tagline">Let us make <strong>Insurance</strong> work for you!</p>
+    <div class="two-col">
+      <img src="assets/images/family-beach.jpg" alt="Family walking together on the beach">
+      <img src="assets/images/strawberry-field.jpg" alt="Grandfather and grandson in a strawberry field">
+    </div>
+  </section>
+
+<footer class="site-footer">
+  <div class="wrap">&copy; <span id="year"></span> Owyhee Insurance Partners. All rights reserved.</div>
+</footer>
+
+<script src="assets/main.js"></script>
 </body>
 </html>
