@@ -1,0 +1,420 @@
+/* ============================================
+   Owyhee Insurance Partners — shared styles
+   ============================================ */
+
+:root {
+  --forest: #3f4f3e;
+  --forest-dark: #2c3a2b;
+  --ink: #1a1a1a;
+  --body-text: #5a5a5a;
+  --cream: #fefefe;
+  --border: #d8d8d3;
+  --card-radius: 14px;
+  --font-display: 'Public Sans', 'Segoe UI', system-ui, sans-serif;
+  --font-body: 'Public Sans', 'Segoe UI', system-ui, sans-serif;
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  padding-top: 40px; /* clearance for the logo badge that floats above the header */
+  font-family: var(--font-body);
+  color: var(--body-text);
+  background: var(--cream);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+img { max-width: 100%; display: block; }
+
+a { color: inherit; text-decoration: none; }
+
+.wrap {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+
+/* ---------- Header / Nav ---------- */
+
+.site-header {
+  border-top: 3px solid var(--border);
+  border-bottom: 3px solid var(--border);
+  position: relative;
+}
+
+.site-header .wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  position: relative;
+}
+
+.nav-group { display: flex; gap: 40px; flex: 1; }
+.nav-group.right { justify-content: flex-end; }
+
+.site-header nav a {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 1.05rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--ink);
+  padding: 14px 0;
+  border-bottom: 2px solid transparent;
+  display: block;
+  line-height: 1;
+}
+
+.site-header nav a:hover,
+.site-header nav a.active { border-color: var(--forest); }
+
+/* Logo floats above the header row so it can overlap the border lines
+   without stretching the row height around it */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  
+}
+
+.logo-badge {
+  width: auto;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-img {
+  height: 150px;
+  width: auto;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 6px;
+}
+
+.hamburger span { width: 26px; height: 2px; background: var(--ink); display: block; }
+
+/* ---------- Buttons ---------- */
+
+.btn {
+  display: inline-block;
+  padding: 14px 30px;
+  border-radius: 999px;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 0.8rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  cursor: pointer;
+  border: 2px solid var(--ink);
+}
+
+.btn-light { background: #fff; color: var(--ink); }
+.btn-light:hover { background: #f2f2f2; }
+
+/* ---------- Hero ---------- */
+
+.hero { text-align: center; padding: 56px 0 0; }
+
+.hero h1 {
+  font-family: var(--font-display);
+  font-size: clamp(1.9rem, 4vw, 2.7rem);
+  color: var(--ink);
+  font-weight: 400;
+  margin: 0 0 4px;
+}
+
+.hero h1 strong { font-weight: 700; }
+
+.hero-image { margin: 36px 0 0; height: 340px; position: relative; border-radius: 14px; overflow: hidden; }
+.hero-image img { width: 100%; height: 100%; object-fit: cover; }
+.hero-image .btn { position: absolute; bottom: 28px; left: 50%; transform: translateX(-50%); border: 2px solid var(--ink); }
+
+/* ---------- Section headings ---------- */
+
+.section { padding: 72px 0; }
+
+.section-heading {
+  text-align: center;
+  max-width: 720px;
+  margin: 0 auto 44px;
+  font-size: 1.25rem;
+}
+
+.section-heading.wide {
+  max-width: 100%;
+}
+
+.section-heading h2 {
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: clamp(1.7rem, 3vw, 2.3rem);
+  color: var(--ink);
+  margin: 0 0 12px;
+}
+
+.section-heading h2 strong {
+  font-weight: 700;
+}
+
+.section-heading p {
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+/* ---------- Why choose us ---------- */
+
+.why-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 44px;
+  align-items: stretch;
+}
+
+.why-list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.why-item {
+  border: 1px solid var(--border);
+  border-radius: var(--card-radius);
+  padding: 20px 24px;
+  font-size: 1.25rem;
+}
+
+.why-item strong {
+  color: var(--ink);
+  font-family: var(--font-display);
+}
+
+.why-grid img {
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  border-radius: var(--card-radius);
+}
+
+/* ---------- Two-photo banner ---------- */
+
+.tagline {
+  text-align: center;
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+  color: var(--ink);
+  margin: 0 0 40px;
+}
+
+.tagline strong { font-weight: 700; }
+
+.two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+.two-col img { width: 100%; height: 320px; object-fit: cover; border-radius: var(--card-radius); }
+
+/* ---------- Services cards ---------- */
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 28px;
+  margin-top: 44px;
+}
+
+.service-card h3 {
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 1.25rem;
+  color: var(--ink);
+  margin: 0 0 10px;
+  min-height: 70px;
+  align-content: center;
+}
+
+.service-card p {
+  font-size: 1.1rem;
+  margin: 0 0 16px;
+  min-height: 200px;
+}
+
+.service-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: var(--card-radius);
+}
+
+.services-hero-image { border-radius: 14px; overflow: hidden; height: 280px; }
+.services-hero-image img { width: 100%; height: 100%; object-fit: cover; }
+
+/* ---------- About page ---------- */
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 380px 1fr;
+  gap: 48px; align-items: start;
+}
+
+.about-grid img {
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+  border-radius: var(--card-radius);
+}
+
+.about-grid p {
+  margin: 0 0 20px;
+  font-size: 1.25rem;
+}
+
+/* ---------- Contact banner (reused as footer CTA) ---------- */
+
+.contact-section {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.contact-section-2 {
+  display: grid;
+  
+}
+
+.contact-banner {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  min-height: 340px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+}
+
+.contact-img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.contact-banner img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+
+.contact-banner::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(0,0,0,0.15), rgba(0,0,0,0.35));
+}
+
+.contact-text {
+  position: absolute;
+  color: white;
+  padding: 10px;
+}
+
+.contact-text h2 {
+  position: relative; z-index: 1;
+  font-family: var(--font-display); font-weight: 400;
+  font-size: clamp(5rem, 3.5vw, 2.6rem);
+  margin: 0 0 8px; color: #1a1a1a;
+}
+
+.contact-banner h2 strong {
+  font-weight: 800;
+}
+
+.contact-banner p {
+  position: relative;
+  z-index: 1;
+  margin: 0;
+  font-size: 1.05rem;
+  color: #f4f4f4;
+}
+
+.contact-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-top: 32px;
+  align-content: center;
+}
+
+.contact-card {
+  border: 1px solid var(--border);
+  border-radius: var(--card-radius);
+  padding: 28px 20px;
+  text-align: center;
+  font-weight: 600;
+  color: var(--ink);
+  font-size: 1.25rem;
+  align-content: center;
+}
+
+.contact-card p {
+  margin: 4px 0;
+}
+
+/* ---------- Contact form (contact page) ---------- */
+
+.contact-form { max-width: 640px; margin: 48px auto 0; display: grid; gap: 18px; }
+.contact-form label { display: block; font-family: var(--font-display); font-size: 0.8rem; font-weight: 600; letter-spacing: 0.04em; text-transform: uppercase; color: var(--ink); margin-bottom: 6px; }
+.contact-form input, .contact-form textarea { width: 100%; padding: 12px 14px; border: 1px solid var(--border); border-radius: 8px; font-family: var(--font-body); font-size: 0.95rem; background: #fff; }
+.contact-form textarea { min-height: 140px; resize: vertical; }
+.contact-form button { justify-self: start; background: var(--forest); color: #fff; border: 2px solid var(--forest); }
+.contact-form button:hover { background: var(--forest-dark); }
+.form-status { font-size: 0.9rem; min-height: 1.2em; }
+
+/* ---------- Footer ---------- */
+
+.site-footer { border-top: 1px solid var(--border); padding: 28px 0; text-align: center; font-size: 0.82rem; color: #999; }
+
+/* ---------- Responsive ---------- */
+
+@media (max-width: 900px) {
+  .why-grid, .about-grid, .two-col { grid-template-columns: 1fr; }
+  .services-grid { grid-template-columns: repeat(2, 1fr); }
+  .contact-cards { grid-template-columns: 1fr; }
+  .contact-section { grid-template-columns: 1fr; }
+  .about-grid img { height: 300px; }
+}
+
+@media (max-width: 680px) {
+  .nav-group { display: none; }
+  .hamburger { display: flex; }
+  .site-header.nav-open .nav-group {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #fff;
+    padding: 20px 32px;
+    border-bottom: 1px solid var(--border);
+    gap: 16px;
+    z-index: 10;
+  }
+  .services-grid { grid-template-columns: 1fr; }
+  .contact-section { grid-template-columns: 1fr; }
+  .hero-image { height: 220px; }
+}
