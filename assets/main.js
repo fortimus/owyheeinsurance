@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const form = document.querySelector('.contact-form');
   if (form) {
     form.addEventListener('submit', (e) => {
-      e.preventDefault();
+      //e.preventDefault();
       const status = form.querySelector('.form-status');
       if (status) {
         status.textContent = 'Thanks! We\u2019ll be in touch soon.';
