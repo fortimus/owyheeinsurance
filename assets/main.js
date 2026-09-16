@@ -47,7 +47,7 @@ const myForm = document.getElementById('userForm');
         if(data.result === 'success') {
           // ✅ THIS CLEARS THE FORM FIELDS
           myForm.reset(); 
-          alert('Data sent and form wiped!');
+          alert('Thanks! We\u2019ll be in touch soon.');
         }
       })
       .catch(error => console.error('Error:', error));
