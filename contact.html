@@ -68,7 +68,7 @@
       <div class="contact-card"><p>Hours: Mon–Fri 8 AM–5 PM</p></div>
     </div>
   
-    <form action="https://script.google.com/a/macros/owyheeip.com/s/AKfycbwD8fFKH2V5GP5Qi-Uq7rC5O37Fb1kE0JHgO-Haxu9eo7GTpqAcMEWmK5WZsVJjF9rNMA/exec" method="POST" class="contact-form">
+    <form action="https://script.google.com/a/macros/owyheeip.com/s/AKfycbwD8fFKH2V5GP5Qi-Uq7rC5O37Fb1kE0JHgO-Haxu9eo7GTpqAcMEWmK5WZsVJjF9rNMA/exec" method="POST" class="contact-form" target="iframe">
       <div>
         <label for="name">Name</label>
         <input type="text" id="name" name="name" required>
@@ -85,10 +85,10 @@
         <label for="message">Message</label>
         <textarea id="message" name="message" required></textarea>
       </div>
-      
+      <button type="submit" class="btn">Send Message</button>
       <p class="form-status" role="status"></p>
     </form>
-    <button type="submit" class="btn">Send Message</button>
+    <iframe name="iframe" style="position: absolute; visibility: hidden"></iframe>
   </section>
 </main>
 
