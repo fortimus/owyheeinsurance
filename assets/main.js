@@ -24,7 +24,14 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   } */
 
-    const myForm = document.getElementById('userForm');
+    
+
+  // Footer year
+  const yearEl = document.getElementById('year');
+  if (yearEl) yearEl.textContent = new Date().getFullYear();
+});
+
+const myForm = document.getElementById('userForm');
 
     myForm.addEventListener('submit', function(e) {
       e.preventDefault();
@@ -44,9 +51,4 @@ document.addEventListener('DOMContentLoaded', () => {
         }
       })
       .catch(error => console.error('Error:', error));
-});
-
-  // Footer year
-  const yearEl = document.getElementById('year');
-  if (yearEl) yearEl.textContent = new Date().getFullYear();
 });
